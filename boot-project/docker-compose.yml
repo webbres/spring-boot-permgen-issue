@@ -1,0 +1,8 @@
+version: "3"
+services:
+  chemical-editor-rest:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - app.version='@project.version@'
